@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Packages - Ananya Events</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              background: 'hsl(0 0% 100%)',
+              foreground: 'hsl(222.2 84% 4.9%)',
+              primary: 'hsl(222.2 47.4% 11.2%)',
+              'primary-foreground': 'hsl(210 40% 98%)',
+            }
+          }
+        }
+      }
+    </script>
+  </head>
+  <body class="bg-background text-foreground">
+    <!-- Navigation Header -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16">
+          <div class="flex-shrink-0">
+            <a href="index.html" class="text-2xl font-bold bg-gradient-to-r from-orange-500 to-yellow-500 bg-clip-text text-transparent">
+              Ananya Events
+            </a>
+          </div>
+          <div class="hidden md:block">
+            <div class="ml-10 flex items-baseline space-x-4">
+              <a href="index.html" class="px-3 py-2 text-sm font-medium text-gray-700 hover:text-orange-500 transition-colors">Home</a>
+              <a href="about.html" class="px-3 py-2 text-sm font-medium text-gray-700 hover:text-orange-500 transition-colors">About</a>
+              <a href="services.html" class="px-3 py-2 text-sm font-medium text-gray-700 hover:text-orange-500 transition-colors">Services</a>
+              <a href="gallery.html" class="px-3 py-2 text-sm font-medium text-gray-700 hover:text-orange-500 transition-colors">Gallery</a>
+              <a href="packages.html" class="px-3 py-2 text-sm font-medium text-orange-500 border-b-2 border-orange-500">Packages</a>
+              <a href="contact.html" class="px-3 py-2 text-sm font-medium text-gray-700 hover:text-orange-500 transition-colors">Contact</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-br from-orange-50 to-yellow-50 py-20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h1 class="text-5xl font-bold text-gray-900 mb-6">Our Packages</h1>
+        <p class="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
+          Choose from our carefully crafted event packages designed for every occasion and budget
+        </p>
+      </div>
+    </section>
+
+    <!-- Packages Grid -->
+    <section class="py-16">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Wedding Packages -->
+        <div class="mb-16">
+          <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">Wedding Packages</h2>
+          <div class="grid md:grid-cols-3 gap-8">
+            
+            <!-- Basic Wedding -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow border-2 border-gray-100">
+              <div class="bg-gradient-to-r from-pink-100 to-purple-100 p-6 text-center">
+                <h3 class="text-2xl font-bold text-gray-900 mb-2">Classic Wedding</h3>
+                <p class="text-4xl font-bold text-gray-900 mb-2">₹2,50,000</p>
+                <p class="text-gray-600">Perfect for intimate ceremonies</p>
+              </div>
+              <div class="p-6">
+                <ul class="space-y-3">
+                  <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> Venue decoration</li>
+                  <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> Basic photography</li>
+                  <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> Catering for 100 guests</li>
+                  <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> Basic sound system</li>
+                  <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> Wedding coordination</li>
+                </ul>
+                <button class="w-full mt-6 bg-gradient-to-r from-pink-500 to-purple-500 text-white py-3 rounded-lg font-medium hover:from-pink-600 hover:to-purple-600 transition-all duration-300">
+                  Choose Package
+                </button>
+              </div>
+            </div>
+
+            <!-- Premium Wedding -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow border-2 border-orange-300 relative">
+              <div class="absolute top-0 right-0 bg-orange-500 text-white px-3 py-1 text-sm font-medium rounded-bl-lg">
+                Popular
+              </div>
+              <div class="bg-gradient-to-r from-orange-100 to-yellow-100 p-6 text-center">
+                <h3 class="text-2xl font-bold text-gray-900 mb-2">Royal Wedding</h3>
+                <p class="text-4xl font-bold text-gray-900 mb-2">₹5,00,000</p>
+                <p class="text-gray-600">Complete luxury experience</p>
+              </div>
+              <div class="p-6">
+                <ul class="space-y-3">
+                  <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> Premium venue decoration</li>
+                  <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> Professional photography & videography</li>
+                  <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> Catering for 250 guests</li>
+                  <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> Live entertainment</li>
+                  <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> Bridal makeup & styling</li>
+                  <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> Wedding car decoration</li>
+                </ul>
+                <button class="w-full mt-6 bg-gradient-to-r from-orange-500 to-yellow-500 text-white py-3 rounded-lg font-medium hover:from-orange-600 hover:to-yellow-600 transition-all duration-300">
+                  Choose Package
+                </button>
+              </div>
+            </div>
+
+            <!-- Luxury Wedding -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow border-2 border-gray-100">
+              <div class="bg-gradient-to-r from-purple-100 to-indigo-100 p-6 text-center">
+                <h3 class="text-2xl font-bold text-gray-900 mb-2">Dream Wedding</h3>
+                <p class="text-4xl font-bold text-gray-900 mb-2">₹10,00,000</p>
+                <p class="text-gray-600">Ultimate luxury celebration</p>
+              </div>
+              <div class="p-6">
+                <ul class="space-y-3">
+                  <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> Designer venue decoration</li>
+                  <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> Cinematic photography & videography</li>
+                  <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> Catering for 500 guests</li>
+                  <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> Celebrity entertainment</li>
+                  <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> Complete bridal services</li>
+                  <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> Luxury transportation</li>
+                  <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> Destination arrangements</li>
+                </ul>
+                <button class="w-full mt-6 bg-gradient-to-r from-purple-500 to-indigo-500 text-white py-3 rounded-lg font-medium hover:from-purple-600 hover:to-indigo-600 transition-all duration-300">
+                  Choose Package
+                </button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Birthday Packages -->
+        <div class="mb-16">
+          <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">Birthday Packages</h2>
+          <div class="grid md:grid-cols-3 gap-8">
+            
+            <!-- Kids Birthday -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+              <div class="bg-gradient-to-r from-yellow-100 to-orange-100 p-6 text-center">
+                <h3 class="text-2xl font-bold text-gray-900 mb-2">Kids Birthday</h3>
+                <p class="text-4xl font-bold text-gray-900 mb-2">₹25,000</p>
+                <p class="text-gray-600">Fun-filled celebration</p>
+              </div>
+              <div class="p-6">
+                <ul class="space-y-3">
+                  <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> Theme-based decoration</li>
+                  <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> Entertainment & games</li>
+                  <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> Custom birthday cake</li>
+                  <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> Party favors</li>
+                  <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> Photography</li>
+                </ul>
+                <button class="w-full mt-6 bg-gradient-to-r from-yellow-500 to-orange-500 text-white py-3 rounded-lg font-medium hover:from-yellow-600 hover:to-orange-600 transition-all duration-300">
+                  Choose Package
+                </button>
+              </div>
+            </div>
+
+            <!-- Adult Birthday -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+              <div class="bg-gradient-to-r from-blue-100 to-purple-100 p-6 text-center">
+                <h3 class="text-2xl font-bold text-gray-900 mb-2">Adult Birthday</h3>
+                <p class="text-4xl font-bold text-gray-900 mb-2">₹50,000</p>
+                <p class="text-gray-600">Elegant celebration</p>
+              </div>
+              <div class="p-6">
+                <ul class="space-y-3">
+                  <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> Sophisticated decoration</li>
+                  <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> DJ & music system</li>
+                  <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> Premium birthday cake</li>
+                  <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> Catering for 50 guests</li>
+                  <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> Professional photography</li>
+                </ul>
+                <button class="w-full mt-6 bg-gradient-to-r from-blue-500 to-purple-500 text-white py-3 rounded-lg font-medium hover:from-blue-600 hover:to-purple-600 transition-all duration-300">
+                  Choose Package
+                </button>
+              </div>
+            </div>
+
+            <!-- Milestone Birthday -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+              <div class="bg-gradient-to-r from-emerald-100 to-teal-100 p-6 text-center">
+                <h3 class="text-2xl font-bold text-gray-900 mb-2">Milestone Birthday</h3>
+                <p class="text-4xl font-bold text-gray-900 mb-2">₹1,00,000</p>
+                <p class="text-gray-600">Grand celebration</p>
+              </div>
+              <div class="p-6">
+                <ul class="space-y-3">
+                  <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> Grand venue decoration</li>
+                  <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> Live entertainment</li>
+                  <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> Designer birthday cake</li>
+                  <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> Catering for 100 guests</li>
+                  <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> Photo & video coverage</li>
+                  <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> Memory book creation</li>
+                </ul>
+                <button class="w-full mt-6 bg-gradient-to-r from-emerald-500 to-teal-500 text-white py-3 rounded-lg font-medium hover:from-emerald-600 hover:to-teal-600 transition-all duration-300">
+                  Choose Package
+                </button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Corporate Packages -->
+        <div class="mb-16">
+          <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">Corporate Packages</h2>
+          <div class="grid md:grid-cols-2 gap-8">
+            
+            <!-- Conference Package -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+              <div class="bg-gradient-to-r from-gray-100 to-blue-100 p-6 text-center">
+                <h3 class="text-2xl font-bold text-gray-900 mb-2">Conference Package</h3>
+                <p class="text-4xl font-bold text-gray-900 mb-2">₹75,000</p>
+                <p class="text-gray-600">Professional meetings</p>
+              </div>
+              <div class="p-6">
+                <ul class="space-y-3">
+                  <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> Venue setup</li>
+                  <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> Audio/visual equipment</li>
+                  <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> Stage & podium setup</li>
+                  <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> Registration desk</li>
+                  <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> Refreshments</li>
+                  <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> Event coordination</li>
+                </ul>
+                <button class="w-full mt-6 bg-gradient-to-r from-gray-500 to-blue-500 text-white py-3 rounded-lg font-medium hover:from-gray-600 hover:to-blue-600 transition-all duration-300">
+                  Choose Package
+                </button>
+              </div>
+            </div>
+
+            <!-- Gala Package -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+              <div class="bg-gradient-to-r from-indigo-100 to-purple-100 p-6 text-center">
+                <h3 class="text-2xl font-bold text-gray-900 mb-2">Corporate Gala</h3>
+                <p class="text-4xl font-bold text-gray-900 mb-2">₹2,00,000</p>
+                <p class="text-gray-600">Premium corporate events</p>
+              </div>
+              <div class="p-6">
+                <ul class="space-y-3">
+                  <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> Luxury venue decoration</li>
+                  <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> Professional entertainment</li>
+                  <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> Gourmet catering</li>
+                  <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> Award ceremony setup</li>
+                  <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> Professional photography</li>
+                  <li class="flex items-center"><span class="text-green-500 mr-2">✓</span> Event management</li>
+                </ul>
+                <button class="w-full mt-6 bg-gradient-to-r from-indigo-500 to-purple-500 text-white py-3 rounded-lg font-medium hover:from-indigo-600 hover:to-purple-600 transition-all duration-300">
+                  Choose Package
+                </button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Custom Package CTA -->
+        <div class="bg-gradient-to-r from-orange-50 to-yellow-50 rounded-lg p-8 text-center">
+          <h2 class="text-3xl font-bold text-gray-900 mb-4">Need a Custom Package?</h2>
+          <p class="text-gray-600 mb-6 max-w-2xl mx-auto">
+            Don't see exactly what you're looking for? We create custom packages tailored to your specific needs and budget.
+          </p>
+          <a href="contact.html" class="bg-gradient-to-r from-orange-500 to-yellow-500 text-white px-8 py-3 rounded-full font-medium hover:from-orange-600 hover:to-yellow-600 transition-all duration-300 inline-block">
+            Request Custom Quote
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid md:grid-cols-4 gap-8">
+          <div>
+            <h3 class="text-xl font-bold mb-4 bg-gradient-to-r from-orange-500 to-yellow-500 bg-clip-text text-transparent">Ananya Events</h3>
+            <p class="text-gray-300">Creating magical moments and unforgettable celebrations</p>
+          </div>
+          <div>
+            <h4 class="font-semibold mb-3">Quick Links</h4>
+            <ul class="space-y-2">
+              <li><a href="index.html" class="text-gray-300 hover:text-white transition-colors">Home</a></li>
+              <li><a href="about.html" class="text-gray-300 hover:text-white transition-colors">About</a></li>
+              <li><a href="services.html" class="text-gray-300 hover:text-white transition-colors">Services</a></li>
+              <li><a href="gallery.html" class="text-gray-300 hover:text-white transition-colors">Gallery</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-semibold mb-3">Services</h4>
+            <ul class="space-y-2">
+              <li><span class="text-gray-300">Wedding Planning</span></li>
+              <li><span class="text-gray-300">Corporate Events</span></li>
+              <li><span class="text-gray-300">Birthday Parties</span></li>
+              <li><span class="text-gray-300">Anniversary Celebrations</span></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-semibold mb-3">Contact Info</h4>
+            <div class="space-y-2 text-gray-300">
+              <p>📞 9949131679 / 7991616123</p>
+              <p>📧 ananyaevents123@gmail.com</p>
+              <p>📍 #3-203, Old Dairy Farm, 6th Line, Adarshnagar, Visakhapatnam-530040</p>
+            </div>
+          </div>
+        </div>
+        <div class="border-t border-gray-800 mt-8 pt-8 text-center">
+          <p class="text-gray-300">&copy; 2024 Ananya Events. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

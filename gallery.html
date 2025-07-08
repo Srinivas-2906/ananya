@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery - Ananya Events</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              background: 'hsl(0 0% 100%)',
+              foreground: 'hsl(222.2 84% 4.9%)',
+              primary: 'hsl(222.2 47.4% 11.2%)',
+              'primary-foreground': 'hsl(210 40% 98%)',
+            }
+          }
+        }
+      }
+    </script>
+  </head>
+  <body class="bg-background text-foreground">
+    <!-- Navigation Header -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16">
+          <div class="flex-shrink-0">
+            <a href="index.html" class="text-2xl font-bold bg-gradient-to-r from-orange-500 to-yellow-500 bg-clip-text text-transparent">
+              Ananya Events
+            </a>
+          </div>
+          <div class="hidden md:block">
+            <div class="ml-10 flex items-baseline space-x-4">
+              <a href="index.html" class="px-3 py-2 text-sm font-medium text-gray-700 hover:text-orange-500 transition-colors">Home</a>
+              <a href="about.html" class="px-3 py-2 text-sm font-medium text-gray-700 hover:text-orange-500 transition-colors">About</a>
+              <a href="services.html" class="px-3 py-2 text-sm font-medium text-gray-700 hover:text-orange-500 transition-colors">Services</a>
+              <a href="gallery.html" class="px-3 py-2 text-sm font-medium text-orange-500 border-b-2 border-orange-500">Gallery</a>
+              <a href="packages.html" class="px-3 py-2 text-sm font-medium text-gray-700 hover:text-orange-500 transition-colors">Packages</a>
+              <a href="contact.html" class="px-3 py-2 text-sm font-medium text-gray-700 hover:text-orange-500 transition-colors">Contact</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative py-20 bg-gradient-to-r from-orange-500 to-yellow-500 text-white overflow-hidden">
+      <div class="absolute inset-0 bg-black/20"></div>
+      <div class="relative max-w-7xl mx-auto px-4 text-center">
+        <h1 class="text-4xl md:text-6xl font-bold mb-6">Event Gallery</h1>
+        <p class="text-xl md:text-2xl opacity-90 max-w-3xl mx-auto">
+          Explore our portfolio of memorable events and celebrations
+        </p>
+      </div>
+    </section>
+
+    <!-- Category Filter -->
+    <section class="py-8 bg-white sticky top-[140px] z-40 shadow-sm">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="flex flex-wrap justify-center gap-4">
+          <button class="category-btn active px-6 py-3 rounded-full font-medium transition-all duration-300 bg-gradient-to-r from-orange-500 to-yellow-500 text-white shadow-lg" data-category="all">
+            All Events
+          </button>
+          <button class="category-btn px-6 py-3 rounded-full font-medium transition-all duration-300 bg-gray-100 text-gray-700 hover:bg-gray-200" data-category="weddings">
+            Weddings & Sangeets
+          </button>
+          <button class="category-btn px-6 py-3 rounded-full font-medium transition-all duration-300 bg-gray-100 text-gray-700 hover:bg-gray-200" data-category="birthdays">
+            Birthday Parties
+          </button>
+          <button class="category-btn px-6 py-3 rounded-full font-medium transition-all duration-300 bg-gray-100 text-gray-700 hover:bg-gray-200" data-category="corporate">
+            Corporate Events
+          </button>
+          <button class="category-btn px-6 py-3 rounded-full font-medium transition-all duration-300 bg-gray-100 text-gray-700 hover:bg-gray-200" data-category="traditional">
+            Traditional Functions
+          </button>
+          <button class="category-btn px-6 py-3 rounded-full font-medium transition-all duration-300 bg-gray-100 text-gray-700 hover:bg-gray-200" data-category="anniversaries">
+            Anniversary Celebrations
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Grid -->
+    <section class="py-20">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6" id="gallery-grid">
+          
+          <!-- Gallery Item 1 -->
+          <div class="gallery-item group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 cursor-pointer" data-category="weddings">
+            <img
+              src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?w=800&h=600&fit=crop"
+              alt="Elegant Wedding Ceremony"
+              class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <div class="absolute bottom-4 left-4 right-4 text-white">
+                <h3 class="text-lg font-bold mb-1">Elegant Wedding Ceremony</h3>
+                <p class="text-sm opacity-90">Beautiful outdoor wedding setup with floral arrangements</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Gallery Item 2 -->
+          <div class="gallery-item group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 cursor-pointer" data-category="birthdays">
+            <img
+              src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?w=800&h=600&fit=crop"
+              alt="Colorful Birthday Celebration"
+              class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <div class="absolute bottom-4 left-4 right-4 text-white">
+                <h3 class="text-lg font-bold mb-1">Colorful Birthday Celebration</h3>
+                <p class="text-sm opacity-90">Vibrant birthday party with themed decorations</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Gallery Item 3 -->
+          <div class="gallery-item group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 cursor-pointer" data-category="corporate">
+            <img
+              src="https://images.unsplash.com/photo-1511578314322-379afb476865?w=800&h=600&fit=crop"
+              alt="Professional Corporate Event"
+              class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <div class="absolute bottom-4 left-4 right-4 text-white">
+                <h3 class="text-lg font-bold mb-1">Professional Corporate Event</h3>
+                <p class="text-sm opacity-90">Elegant corporate gathering with modern setup</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Gallery Item 4 -->
+          <div class="gallery-item group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 cursor-pointer" data-category="traditional">
+            <img
+              src="https://images.unsplash.com/photo-1583939003579-730e3918a45a?w=800&h=600&fit=crop"
+              alt="Traditional Half Saree Function"
+              class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <div class="absolute bottom-4 left-4 right-4 text-white">
+                <h3 class="text-lg font-bold mb-1">Traditional Half Saree Function</h3>
+                <p class="text-sm opacity-90">Beautiful traditional ceremony with cultural decorations</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Gallery Item 5 -->
+          <div class="gallery-item group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 cursor-pointer" data-category="anniversaries">
+            <img
+              src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=800&h=600&fit=crop"
+              alt="Romantic Anniversary Setup"
+              class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <div class="absolute bottom-4 left-4 right-4 text-white">
+                <h3 class="text-lg font-bold mb-1">Romantic Anniversary Setup</h3>
+                <p class="text-sm opacity-90">Intimate anniversary celebration with romantic ambiance</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Gallery Item 6 -->
+          <div class="gallery-item group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 cursor-pointer" data-category="traditional">
+            <img
+              src="https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=800&h=600&fit=crop"
+              alt="House Warming Ceremony"
+              class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <div class="absolute bottom-4 left-4 right-4 text-white">
+                <h3 class="text-lg font-bold mb-1">House Warming Ceremony</h3>
+                <p class="text-sm opacity-90">Traditional house warming with auspicious decorations</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Gallery Item 7 -->
+          <div class="gallery-item group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 cursor-pointer" data-category="birthdays">
+            <img
+              src="https://images.unsplash.com/photo-1529636798458-92182e662485?w=800&h=600&fit=crop"
+              alt="Kids Birthday Party"
+              class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <div class="absolute bottom-4 left-4 right-4 text-white">
+                <h3 class="text-lg font-bold mb-1">Kids Birthday Party</h3>
+                <p class="text-sm opacity-90">Fun-filled children's birthday party with games and activities</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Gallery Item 8 -->
+          <div class="gallery-item group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 cursor-pointer" data-category="corporate">
+            <img
+              src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&h=600&fit=crop"
+              alt="Corporate Dinner Event"
+              class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <div class="absolute bottom-4 left-4 right-4 text-white">
+                <h3 class="text-lg font-bold mb-1">Corporate Dinner Event</h3>
+                <p class="text-sm opacity-90">Sophisticated corporate dinner with professional setup</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Gallery Item 9 -->
+          <div class="gallery-item group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 cursor-pointer" data-category="weddings">
+            <img
+              src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=800&h=600&fit=crop"
+              alt="Bridal Makeup Session"
+              class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <div class="absolute bottom-4 left-4 right-4 text-white">
+                <h3 class="text-lg font-bold mb-1">Bridal Makeup Session</h3>
+                <p class="text-sm opacity-90">Professional bridal makeup and styling services</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Gallery Item 10 -->
+          <div class="gallery-item group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 cursor-pointer" data-category="corporate">
+            <img
+              src="https://images.unsplash.com/photo-1515169067868-5387ec356754?w=800&h=600&fit=crop"
+              alt="Retirement Function"
+              class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <div class="absolute bottom-4 left-4 right-4 text-white">
+                <h3 class="text-lg font-bold mb-1">Retirement Function</h3>
+                <p class="text-sm opacity-90">Memorable retirement celebration with honor presentation</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Gallery Item 11 -->
+          <div class="gallery-item group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 cursor-pointer" data-category="weddings">
+            <img
+              src="https://images.unsplash.com/photo-1606216794074-735e91aa2c92?w=800&h=600&fit=crop"
+              alt="Wedding Photography"
+              class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <div class="absolute bottom-4 left-4 right-4 text-white">
+                <h3 class="text-lg font-bold mb-1">Wedding Photography</h3>
+                <p class="text-sm opacity-90">Capturing beautiful moments with professional photography</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Gallery Item 12 -->
+          <div class="gallery-item group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 cursor-pointer" data-category="traditional">
+            <img
+              src="https://images.unsplash.com/photo-1518374978379-37b22f4c3b81?w=800&h=600&fit=crop"
+              alt="Naming Ceremony"
+              class="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <div class="absolute bottom-4 left-4 right-4 text-white">
+                <h3 class="text-lg font-bold mb-1">Naming Ceremony</h3>
+                <p class="text-sm opacity-90">Auspicious naming ceremony with traditional rituals</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4 hidden">
+      <div class="relative max-w-4xl max-h-full">
+        <button id="close-lightbox" class="absolute -top-12 right-0 text-white hover:text-gray-300 transition-colors">
+          <svg class="h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
+        </button>
+        <button id="prev-btn" class="absolute left-4 top-1/2 transform -translate-y-1/2 text-white hover:text-gray-300 transition-colors">
+          <svg class="h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+          </svg>
+        </button>
+        <button id="next-btn" class="absolute right-4 top-1/2 transform -translate-y-1/2 text-white hover:text-gray-300 transition-colors">
+          <svg class="h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+          </svg>
+        </button>
+        <img id="lightbox-image" src="" alt="" class="max-w-full max-h-full object-contain">
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid md:grid-cols-4 gap-8">
+          <div>
+            <h3 class="text-xl font-bold mb-4 bg-gradient-to-r from-orange-500 to-yellow-500 bg-clip-text text-transparent">Ananya Events</h3>
+            <p class="text-gray-300">Creating magical moments and unforgettable celebrations</p>
+          </div>
+          <div>
+            <h4 class="font-semibold mb-3">Quick Links</h4>
+            <ul class="space-y-2">
+              <li><a href="index.html" class="text-gray-300 hover:text-white transition-colors">Home</a></li>
+              <li><a href="about.html" class="text-gray-300 hover:text-white transition-colors">About</a></li>
+              <li><a href="services.html" class="text-gray-300 hover:text-white transition-colors">Services</a></li>
+              <li><a href="gallery.html" class="text-gray-300 hover:text-white transition-colors">Gallery</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-semibold mb-3">Services</h4>
+            <ul class="space-y-2">
+              <li><span class="text-gray-300">Wedding Planning</span></li>
+              <li><span class="text-gray-300">Corporate Events</span></li>
+              <li><span class="text-gray-300">Birthday Parties</span></li>
+              <li><span class="text-gray-300">Anniversary Celebrations</span></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-semibold mb-3">Contact Info</h4>
+            <div class="space-y-2 text-gray-300">
+              <p>📞 9949131679 / 7991616123</p>
+              <p>📧 ananyaevents123@gmail.com</p>
+              <p>📍 #3-203, Old Dairy Farm, 6th Line, Adarshnagar, Visakhapatnam-530040</p>
+            </div>
+          </div>
+        </div>
+        <div class="border-t border-gray-800 mt-8 pt-8 text-center">
+          <p class="text-gray-300">&copy; 2024 Ananya Events. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Category filtering
+      const categoryBtns = document.querySelectorAll('.category-btn');
+      const galleryItems = document.querySelectorAll('.gallery-item');
+      let currentCategory = 'all';
+
+      categoryBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          const category = btn.getAttribute('data-category');
+          currentCategory = category;
+          
+          // Update button styles
+          categoryBtns.forEach(b => {
+            b.classList.remove('active', 'bg-gradient-to-r', 'from-orange-500', 'to-yellow-500', 'text-white', 'shadow-lg');
+            b.classList.add('bg-gray-100', 'text-gray-700', 'hover:bg-gray-200');
+          });
+          
+          btn.classList.add('active', 'bg-gradient-to-r', 'from-orange-500', 'to-yellow-500', 'text-white', 'shadow-lg');
+          btn.classList.remove('bg-gray-100', 'text-gray-700', 'hover:bg-gray-200');
+          
+          // Filter gallery items
+          galleryItems.forEach(item => {
+            const itemCategory = item.getAttribute('data-category');
+            if (category === 'all' || itemCategory === category) {
+              item.style.display = 'block';
+            } else {
+              item.style.display = 'none';
+            }
+          });
+        });
+      });
+
+      // Lightbox functionality
+      const lightbox = document.getElementById('lightbox');
+      const lightboxImage = document.getElementById('lightbox-image');
+      const closeLightbox = document.getElementById('close-lightbox');
+      const prevBtn = document.getElementById('prev-btn');
+      const nextBtn = document.getElementById('next-btn');
+      
+      let currentImageIndex = 0;
+      let visibleImages = [];
+
+      // Update visible images based on current category
+      function updateVisibleImages() {
+        visibleImages = Array.from(galleryItems).filter(item => {
+          const itemCategory = item.getAttribute('data-category');
+          return currentCategory === 'all' || itemCategory === currentCategory;
+        });
+      }
+
+      // Open lightbox
+      galleryItems.forEach((item, index) => {
+        item.addEventListener('click', () => {
+          updateVisibleImages();
+          const img = item.querySelector('img');
+          lightboxImage.src = img.src;
+          lightboxImage.alt = img.alt;
+          currentImageIndex = visibleImages.indexOf(item);
+          lightbox.classList.remove('hidden');
+        });
+      });
+
+      // Close lightbox
+      closeLightbox.addEventListener('click', () => {
+        lightbox.classList.add('hidden');
+      });
+
+      // Close lightbox on background click
+      lightbox.addEventListener('click', (e) => {
+        if (e.target === lightbox) {
+          lightbox.classList.add('hidden');
+        }
+      });
+
+      // Navigate images
+      prevBtn.addEventListener('click', () => {
+        currentImageIndex = currentImageIndex > 0 ? currentImageIndex - 1 : visibleImages.length - 1;
+        const img = visibleImages[currentImageIndex].querySelector('img');
+        lightboxImage.src = img.src;
+        lightboxImage.alt = img.alt;
+      });
+
+      nextBtn.addEventListener('click', () => {
+        currentImageIndex = currentImageIndex < visibleImages.length - 1 ? currentImageIndex + 1 : 0;
+        const img = visibleImages[currentImageIndex].querySelector('img');
+        lightboxImage.src = img.src;
+        lightboxImage.alt = img.alt;
+      });
+
+      // Keyboard navigation
+      document.addEventListener('keydown', (e) => {
+        if (lightbox.classList.contains('hidden')) return;
+        
+        if (e.key === 'Escape') {
+          lightbox.classList.add('hidden');
+        } else if (e.key === 'ArrowLeft') {
+          prevBtn.click();
+        } else if (e.key === 'ArrowRight') {
+          nextBtn.click();
+        }
+      });
+    </script>
+  </body>
+</html>
